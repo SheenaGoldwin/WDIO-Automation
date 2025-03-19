@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2","Test Authentication","","Tue Mar 18 14:17:09 EDT 2025","passed","Tue Mar 18 14:17:09 EDT 2025","","My Login application","",""
+"","11782","should login with valid credentials","","Tue Mar 18 14:16:58 EDT 2025","passed","Tue Mar 18 14:17:09 EDT 2025","","My Login application","",""

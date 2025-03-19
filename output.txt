@@ -1,0 +1,94 @@
+
+> wdio
+> wdio run ./wdio.conf.js
+
+
+Execution of 1 workers started at 2025-03-18T10:15:16.723Z
+
+2025-03-18T10:15:16.733Z INFO @wdio/cli:launcher: Run onPrepare hook
+2025-03-18T10:15:16.734Z INFO @wdio/utils: Setting up browser driver for: chrome@stable
+2025-03-18T10:15:16.735Z INFO @wdio/utils: Setting up browser binaries for: chrome@stable
+2025-03-18T10:15:16.737Z INFO webdriver: Using Chromedriver v134.0.6998.89 from cache directory C:\Users\sheen\AppData\Local\Temp
+2025-03-18T10:15:16.739Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2025-03-18T10:15:16.740Z INFO @wdio/local-runner: Start worker 0-0 with arg: run ./wdio.conf.js
+[0-0] 2025-03-18T10:15:17.654Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in chrome - file:///C:/Users/sheen/WDIO_AutomationProject/BambooHr/test/specs/login.spec.js
+[0-0] 2025-03-18T10:15:17.849Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2025-03-18T10:15:18.122Z INFO webdriver: Using Chromedriver v134.0.6998.89 from cache directory C:\Users\sheen\AppData\Local\Temp
+[0-0] 2025-03-18T10:15:18.149Z INFO chromedriver: Starting ChromeDriver 134.0.6998.89 (b623489a994ecb8df7381fcceb54cfd3aafc9c3c-refs/branch-heads/6998@{#1899}) on port 61846
+[0-0] 2025-03-18T10:15:18.149Z INFO chromedriver: Remote connections are allowed by an allowlist (0.0.0.0).
+[0-0] 2025-03-18T10:15:18.149Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[0-0] 2025-03-18T10:15:18.152Z INFO chromedriver: ChromeDriver was started successfully on port 61846.
+[0-0] 2025-03-18T10:15:19.161Z INFO @wdio/utils: Started Chromedriver v134.0.6998.89 with params --port=61846 --allowed-origins=* --allowed-ips=0.0.0.0 in 1048ms on port 61846
+[0-0] 2025-03-18T10:15:19.167Z INFO webdriver: [POST] http://localhost:61846/session
+[0-0] 2025-03-18T10:15:19.168Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       browserName: 'chrome',
+[0-0]       'goog:chromeOptions': [Object],
+[0-0]       webSocketUrl: true,
+[0-0]       unhandledPromptBehavior: 'ignore'
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   }
+[0-0] }
+[0-0] 2025-03-18T10:15:19.861Z INFO webdriver: Register BiDi handler for session with id 5b845642a182ac0452d77f0e0c97f966
+[0-0] 2025-03-18T10:15:19.862Z INFO webdriver: Connect to webSocketUrl ws://127.0.0.1:61846/session/5b845642a182ac0452d77f0e0c97f966
+[0-0] 2025-03-18T10:15:19.873Z INFO webdriver: Connected session to Bidi protocol
+[0-0] 2025-03-18T10:15:19.874Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.contextCreated"]}
+[0-0] 2025-03-18T10:15:19.876Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["log.entryAdded","browsingContext.navigationStarted"]}
+[0-0] 2025-03-18T10:15:19.877Z INFO webdriver: BIDI COMMAND script.addPreloadScript { functionDeclaration: <PreloadScript[1319 bytes]>, contexts: undefined }
+[0-0] 2025-03-18T10:15:19.878Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.navigationStarted","browsingContext.fragmentNavigated","network.responseCompleted","network.beforeRequestSent","network.fetchError"]}
+[0-0] 2025-03-18T10:15:19.878Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.userPromptOpened"]}
+[0-0] 2025-03-18T10:15:19.878Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.navigationStarted"]}
+[0-0] 2025-03-18T10:15:19.879Z INFO webdriver: COMMAND getWindowHandle()
+[0-0] 2025-03-18T10:15:19.879Z INFO webdriver: Connected to WebDriver Bidi interface at ws://127.0.0.1:61846/session/5b845642a182ac0452d77f0e0c97f966
+[0-0] 2025-03-18T10:15:19.880Z INFO webdriver: BIDI COMMAND browsingContext.getTree {}
+[0-0] 2025-03-18T10:15:19.880Z INFO webdriver: [GET] http://localhost:61846/session/5b845642a182ac0452d77f0e0c97f966/window
+[0-0] 2025-03-18T10:15:19.882Z INFO webdriver: RESULT D919E5DC8A112D10EEBE050E0B8D1F9C
+[0-0] 2025-03-18T10:15:19.888Z INFO webdriverio:PolyfillManager: Adding polyfill script to context with id D919E5DC8A112D10EEBE050E0B8D1F9C
+[0-0] 2025-03-18T10:15:19.888Z INFO webdriver: BIDI COMMAND script.callFunction {"functionDeclaration":"<Function[442 bytes] webdriverioPolyfill>","target":{"children":null,"clientWindow":"","context":"D919E5DC8A112D10EEBE050E0B8D1F9C","originalOpener":null,"parent":null,"url":"about:blank","userContext":"default"},"awaitPromise":false}
+[0-0] 2025-03-18T10:15:19.888Z INFO webdriver: BIDI COMMAND script.addPreloadScript { functionDeclaration: <PreloadScript[442 bytes]>, contexts: ["D919E5DC8A112D10EEBE050E0B8D1F9C"] }
+[0-0] 2025-03-18T10:15:19.889Z INFO webdriver: BIDI RESULT {"id":1,"result":{"subscription":"141b12a5-1ef8-4e02-879c-42dabe653e9d"},"type":"success"}
+[0-0] 2025-03-18T10:15:19.889Z INFO webdriver: BIDI RESULT {"id":2,"result":{"subscription":"b8437970-b40c-4e7f-8a1c-de645c53cf86"},"type":"success"}
+[0-0] 2025-03-18T10:15:19.890Z INFO webdriver: BIDI RESULT {"id":4,"result":{"subscription":"a1767168-a713-4090-a40d-53677d52e099"},"type":"success"}
+[0-0] 2025-03-18T10:15:19.890Z INFO webdriver: BIDI RESULT {"id":5,"result":{"subscription":"236dd5b5-d02d-4fbf-bbb1-256d7e6e4743"},"type":"success"}
+[0-0] 2025-03-18T10:15:19.891Z INFO webdriver: BIDI RESULT {"id":6,"result":{"subscription":"8b701f59-cdcf-4679-a1fa-90d5b27c1185"},"type":"success"}
+[0-0] 2025-03-18T10:15:19.891Z INFO webdriver: BIDI RESULT {"id":7,"result":{"contexts":[{"children":[],"clientWindow":"","context":"D919E5DC8A112D10EEBE050E0B8D1F9C","originalOpener":null,"parent":null,"url":"about:blank","userContext":"default"}]},"type":"success"}
+[0-0]  Error:  Unable to load spec files quite likely because they rely on `browser` object that is not fully initialized.
+`browser` object has only `capabilities` and some flags like `isMobile`.
+Helper files that use other `browser` commands have to be moved to `before` hook.
+Spec file(s): file:///C:/Users/sheen/WDIO_AutomationProject/BambooHr/test/specs/login.spec.js
+Error: Error: Cannot find module '../page.js'
+Require stack:
+- C:\Users\sheen\WDIO_AutomationProject\BambooHr\test\pageobjects\dashboardpage.js
+- C:\Users\sheen\WDIO_AutomationProject\BambooHr\test\specs\login.spec.js
+- C:\Users\sheen\WDIO_AutomationProject\BambooHr\node_modules\mocha\lib\nodejs\esm-utils.js
+- C:\Users\sheen\WDIO_AutomationProject\BambooHr\node_modules\mocha\lib\mocha.js
+    at node:internal/modules/cjs/loader:1225:15
+    at m._resolveFilename (file:///C:/Users/sheen/WDIO_AutomationProject/BambooHr/node_modules/tsx/dist/register-RyGUjI6j.mjs:1:789)
+    at nextResolveSimple (C:\Users\sheen\WDIO_AutomationProject\BambooHr\node_modules\tsx\dist\register-DCnOAxY2.cjs:3:942)
+    at C:\Users\sheen\WDIO_AutomationProject\BambooHr\node_modules\tsx\dist\register-DCnOAxY2.cjs:2:2550
+    at C:\Users\sheen\WDIO_AutomationProject\BambooHr\node_modules\tsx\dist\register-DCnOAxY2.cjs:2:1624
+    at resolveTsPaths (C:\Users\sheen\WDIO_AutomationProject\BambooHr\node_modules\tsx\dist\register-DCnOAxY2.cjs:3:760)
+    at Function._resolveFilename (C:\Users\sheen\WDIO_AutomationProject\BambooHr\node_modules\tsx\dist\register-DCnOAxY2.cjs:3:1038)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+[0-0] 2025-03-18T10:15:19.900Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2025-03-18T10:15:19.901Z INFO webdriver: [DELETE] http://localhost:61846/session/5b845642a182ac0452d77f0e0c97f966
+[0-0] 2025-03-18T10:15:19.903Z INFO webdriver: BIDI RESULT {"id":3,"result":{"script":"db84dd1a-a1eb-4235-83bc-180791a5889b"},"type":"success"}
+[0-0] 2025-03-18T10:15:19.904Z INFO webdriver: BIDI RESULT {"id":8,"result":{"realm":"-6253831118078245325.-83515828241310669","result":{"type":"undefined"},"type":"success"},"type":"success"}
+[0-0] 2025-03-18T10:15:19.904Z INFO webdriver: BIDI RESULT {"id":9,"result":{"script":"08bc18e8-dd76-446a-9557-02a5782196d5"},"type":"success"}
+[0-0] 2025-03-18T10:15:19.959Z INFO webdriver: RESULT null
+[0-0] 2025-03-18T10:15:19.961Z INFO webdriver: Close Bidi connection to ws://127.0.0.1:61846/session/5b845642a182ac0452d77f0e0c97f966
+[0-0] 2025-03-18T10:15:19.963Z INFO webdriver: Kill driver process with PID 25068
+[0-0] FAILED in chrome - file:///C:/Users/sheen/WDIO_AutomationProject/BambooHr/test/specs/login.spec.js
+2025-03-18T10:15:20.137Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:03  
+
+2025-03-18T10:15:20.138Z INFO @wdio/local-runner: Shutting down spawned worker
+2025-03-18T10:15:20.400Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2025-03-18T10:15:20.401Z INFO @wdio/local-runner: shutting down
+2025-03-18T10:15:20.401Z INFO @wdio/cli:launcher: Run onComplete hook

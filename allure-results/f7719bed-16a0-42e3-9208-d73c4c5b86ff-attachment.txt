@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "div[style='display: inline-block;'] > button > div"
+}
